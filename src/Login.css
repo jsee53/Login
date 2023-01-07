@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+}
+
+.login {
+  margin-top: 80px;
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ddd;
+}
+
+.login_title {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+}
+
+.login_window {
+  margin-top: 30px;
+}
+
+.submit {
+  background-color: #0076c0;
+  border: none;
+  color: white;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.SignUp {
+  background-color: #0076c0;
+  border: none;
+  color: white;
+}
+
+.SignUp:hover {
+  cursor: pointer;
+}
