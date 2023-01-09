@@ -24,6 +24,7 @@ body {
 }
 
 input {
+  margin-top: 20px;
   border: 1px solid #ddd;
   background-color: rgb(232, 240, 254);
 }
