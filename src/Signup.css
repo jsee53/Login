@@ -6,14 +6,14 @@ body {
   margin-top: 80px;
   text-align: center;
   display: inline-block;
-  width: 400px;
+  width: 450px;
   height: 500px;
   border: 1px solid #ddd;
 }
 
 .signUp_title {
   display: inline-block;
-  width: 300px;
+  width: 350px;
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #ddd;
@@ -22,7 +22,7 @@ body {
 
 .form_box {
   display: inline-block;
-  width: 300px;
+  width: 350px;
 }
 
 .input_id {
@@ -31,7 +31,7 @@ body {
 
 input {
   margin-top: 20px;
-  width: 300px;
+  width: 350px;
   border: 1px solid #ddd;
   background-color: rgb(232, 240, 254);
   padding: 5px 10px;
@@ -42,7 +42,7 @@ input {
   border: none;
   color: white;
   float: right;
-  width: 60px;
+  width: 80px;
 }
 
 .submit:hover {
@@ -52,7 +52,7 @@ input {
 .login {
   margin-top: 30px;
   font-size: 11px;
-  width: 300px;
+  width: 350px;
   text-align: center;
   display: inline-block;
   border-top: 1px solid #ddd;
