@@ -7,7 +7,7 @@
   <body>
     <div class="signUp">
       <div class="form_box">
-        <form action="">
+        <form action="./signup_action.php">
           <div class="signUp_title">회원가입</div>
           <div class="input_id"></div>
           <input
@@ -15,24 +15,28 @@
             placeholder="아이디"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '아이디'"
+            name="id"
           />
           <input
             type="text"
             placeholder="비밀번호"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '비밀번호'"
+            name="password"
           />
           <input
             type="text"
             placeholder="상태메시지 (다른 사람에게 보이고 싶은 한마디)"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '상태메시지 (다른 사람에게 보이고 싶은 한마디)'"
+            name="nickname"
           />
           <input
             type="text"
             placeholder="이메일"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '이메일'"
+            name="email"
           />
           <br />
           <input
@@ -50,4 +54,3 @@
     </div>
   </body>
 </html>
-<script src="/src/Login.js"></script>
