@@ -4,6 +4,6 @@
     $name=$_POST["nickname"];
     $name=$_POST["email"];
     ?>
-    <script>alert("성공!")</script>
+    <script>alert("회원가입 성공!")</script>
     <?php
     ?>
