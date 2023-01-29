@@ -1,13 +1,13 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/Signup.css" />
+    <link rel="stylesheet" href="Signup.css">
     <title>Login</title>
   </head>
   <body>
     <div class="signUp">
       <div class="form_box">
-        <form action="./signup_action.php">
+        <form action="signup_action.php" method="post">
           <div class="signUp_title">회원가입</div>
           <div class="input_id"></div>
           <input
@@ -49,9 +49,8 @@
         </form>
       </div>
       <div class="login">
-        계정이 이미 있는 경우에는 <a href="#">로그인</a>해주세요.
+        계정이 이미 있는 경우에는 <a href="index.php">로그인</a>해주세요.
       </div>
     </div>
   </body>
 </html>
-<script src="/src/Login.js"></script>

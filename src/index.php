@@ -1,7 +1,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/Login.css" />
+    <link rel="stylesheet" href="Login.css" />
     <title>Login</title>
   </head>
   <body>
@@ -27,9 +27,8 @@
         </form>
       </div>
       <div class="signUp">
-        회원 가입은 <a href="#">여기</a>에서 할 수 있습니다.
+        회원 가입은 <a href="Signup.php">여기</a>에서 할 수 있습니다.
       </div>
     </div>
   </body>
 </html>
-<script src="/src/Login.js"></script>
