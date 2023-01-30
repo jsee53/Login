@@ -4,8 +4,14 @@
     $nickname=$_POST['nickname'];
     $email=$_POST['email'];
     ?>
-    <script>alert("id: ")</script>
     <?php
+    $con=mysqli_connect("locahost","root","","login");
+    if($con){
+        echo "connect succes!";
+    }
+    else{
+        echo "connect false!";
+    }
     ?>
 
     <html lang="ko">
