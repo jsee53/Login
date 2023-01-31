@@ -5,13 +5,12 @@
     $email=$_POST['email'];
     ?>
     <?php
-    $con=mysqli_connect("locahost","root","","login");
-    if($con){
-        echo "connect succes!";
-    }
-    else{
-        echo "connect false!";
-    }
+    $con=mysqli_connect("localhost","root","","login")or die("MySQL 접속 실패!");
+    
+    $sql="CREATE TABLE login_data(ID CHAR(30), PASSWORD CHAR(30), NICKNAME CHAR(30), EMAIL CHAR(30))";
+    $insert_query="INSERT INTO login_data(ID,PASSWORD,NICKNAME, EMAIL) VALUES(id,password,nickname,email)";
+    
+    mysqli_query($con,$insert_query);
     ?>
 
     <html lang="ko">
