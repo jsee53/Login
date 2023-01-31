@@ -6,11 +6,22 @@
     ?>
     <?php
     $con=mysqli_connect("localhost","root","","login")or die("MySQL 접속 실패!");
+    // 한글 깨짐 관련
+    mysqli_query($con, "set session character_set_connection=utf8;");
+    mysqli_query($con, "set session character_set_results=utf8;");
+    mysqli_query($con, "set session character_set_client=utf8;");
     
     $sql="CREATE TABLE login_data(ID CHAR(30), PASSWORD CHAR(30), NICKNAME CHAR(30), EMAIL CHAR(30))";
-    $insert_query="INSERT INTO login_data(ID,PASSWORD,NICKNAME, EMAIL) VALUES(id,password,nickname,email)";
+
+    //form으로 받은 값을 db에 추가
+    $insert_query="INSERT INTO login_data(ID,PASSWORD,NICKNAME, EMAIL) VALUES('".$id."','".$password."','".$nickname."','".$email."')";
+    if(mysqli_query($con,$insert_query)){
+        echo "table 생성성공!";
+    }
+    else{
+        echo "table 생성실패!";
+    }
     
-    mysqli_query($con,$insert_query);
     ?>
 
     <html lang="ko">
