@@ -12,6 +12,14 @@
           <div class="input_id"></div>
           <input
             type="text"
+            placeholder="이름"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '이름'"
+            onkeyup="duplication_check(this.value)"
+            name="name"
+          />
+          <input
+            type="text"
             placeholder="아이디"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '아이디'"
@@ -54,3 +62,11 @@
     </div>
   </body>
 </html>
+
+<script>
+  function duplication_check(value){
+    $ajax({
+      
+    })
+  }
+</script>
