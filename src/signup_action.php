@@ -19,6 +19,15 @@
         echo "table 생성실패!";
     }
     
+    $check_query="SELECT EXISTS(select * from login_table where id=$id) As t;";
+    if(mysqli_query($con,$check_query)){
+        if(1){
+            echo("사용가능");
+        }
+        else{
+            echo("사용불가능");
+        }
+    }
     ?>
 
     <html lang="ko">
