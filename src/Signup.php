@@ -62,11 +62,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  function duplication_check(value){
-    $ajax({
-      
-    })
-  }
-</script>

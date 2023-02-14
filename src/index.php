@@ -7,7 +7,7 @@
   <body>
     <div class="login">
       <div class="form_box">
-        <form action="">
+        <form action="login_action.php">
           <div class="login_title">로그인</div>
           <div class="input_id"></div>
           <input
