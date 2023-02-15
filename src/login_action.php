@@ -10,14 +10,20 @@
     $ret=mysqli_query($con,$check_query);
     $result=mysqli_num_rows($ret);
     if($result>0){ //아이디가 있다면 비밀번호 확인
-        echo "<script>location.href = 'Welcome.php';</script>";
+        $pass_query="SELECT password FROM login_table WHERE id='".$id."'";
+        $pas_ret=mysqli_query($con,$pass_query);
+        $pas_result=mysqli_fetch_row($pas_ret);
 
-
-        echo("비밀번호를 확인해주세요!");
-        echo "<script>location.href = 'index.php';</script>";
+        if($pas_result[0]==$password){
+            echo "<script>location.href = 'Welcome.php';</script>";
+        }
+        else{
+            echo "<script>alert('비밀번호를 확인해주세요!');</script>";
+            echo "<script>location.href = 'index.php';</script>";
+        }
     }
     else{
         echo("아이디를 확인해주세요!");
-        echo "<script>location.href = 'index.php';</script>";
+        //echo "<script>location.href = 'index.php';</script>";
     }
     ?>

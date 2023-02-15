@@ -1,13 +1,13 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Login.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Login</title>
   </head>
   <body>
     <div class="login">
       <div class="form_box">
-        <form action="login_action.php">
+        <form action="login_action.php" method="post">
           <div class="login_title">로그인</div>
           <div class="input_id"></div>
           <input

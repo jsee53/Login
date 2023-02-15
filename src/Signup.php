@@ -15,7 +15,6 @@
             placeholder="이름"
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = '이름'"
-            onkeyup="duplication_check(this.value)"
             name="name"
           />
           <input
@@ -51,8 +50,6 @@
             type="submit"
             class="submit"
             value="회원가입"
-            onfocus="this.placeholder = ''"
-            onblur="this.placeholder = '회원가입'"
           />
         </form>
       </div>
